@@ -21,7 +21,7 @@ purposes.
 ## Example command line use:
 
 ```bash
-graphpak --text "Mein Name ist Vogel. Ich habe eine Katze, die heißt Julian."
+graphpak --text "Ich heiße Julian und ich habe eine Katze, deren Name ist Jenny. Jenny jagt gerne Vögel."
 ```
 
 Would yield the not yet perfect result:
