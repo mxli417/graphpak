@@ -18,5 +18,14 @@ available building upon open-source software, research materials and papers. The
 will be to provide a lightweight, reusable and accessible tool for various downstream
 purposes.
 
+## Example command line use:
+
+```bash
+graphpak --text "Mein Name ist Vogel. Ich habe eine Katze, die heißt Julian."
+```
+
+Would yield the not yet perfect result:
+
+![Example command line graph plot result](./assets/example.png)
 
 Build start: January 2024
