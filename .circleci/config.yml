@@ -1,0 +1,35 @@
+# This config was automatically generated from your source code
+# Stacks detected: cicd:github-actions:.github/workflows,deps:python:.,test:tox:.
+version: 2.1
+jobs:
+  test-python:
+    # Install dependencies and run tests
+    docker:
+      - image: cimg/python:3.11-node
+    steps:
+      - checkout
+      - run: python3 -m pip install .[dev]
+      - run:
+          name: Run tests
+          command: python -m tox -e test
+      - store_test_results:
+          path: junit.xml
+  deploy:
+    # This is an example deploy job, not actually used by the workflow
+    docker:
+      - image: cimg/base:stable
+    steps:
+      # Replace this with steps to deploy to users
+      - run:
+          name: deploy
+          command: '#e.g. ./deploy.sh'
+      - run:
+          name: found github actions config
+          command: ':'
+workflows:
+  build-and-test:
+    jobs:
+      - test-python
+    # - deploy:
+    #     requires:
+    #       - test-python
