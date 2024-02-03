@@ -11,7 +11,7 @@ jobs:
       - run: python3 -m pip install .[dev]
       - run:
           name: Run tests
-          command: tox -e test
+          command: python -m tox -e test
       - store_test_results:
           path: junit.xml
   deploy:
