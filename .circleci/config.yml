@@ -5,7 +5,7 @@ jobs:
   test-python:
     # Install dependencies and run tests
     docker:
-      - image: cimg/python:3.8-node
+      - image: cimg/python:3.11-node
     steps:
       - checkout
       - run: python3 -m pip install .[dev]
