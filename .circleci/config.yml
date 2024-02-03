@@ -1,8 +1,6 @@
 # This config was automatically generated from your source code
 # Stacks detected: cicd:github-actions:.github/workflows,deps:python:.,test:tox:.
 version: 2.1
-orbs:
-  python: circleci/python@2
 jobs:
   test-python:
     # Install dependencies and run tests
@@ -10,12 +8,10 @@ jobs:
       - image: cimg/python:3.8-node
     steps:
       - checkout
-      - python/install-packages
-      - python/install-packages:
-          args: tox
+      - run: python3 -m pip install .[dev]
       - run:
           name: Run tests
-          command: tox
+          command: tox -e test
       - store_test_results:
           path: junit.xml
   deploy:

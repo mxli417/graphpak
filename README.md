@@ -1,3 +1,6 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/circleci/BbJs9oTbCH7LLiezNiXJW9/D3eKhPg3Et8a8GG6FsKHdm/tree/circleci-project-setup.svg?style=svg&circle-token=73d7f4adbdef23fd686693309f97ac8e72424183)](https://dl.circleci.com/status-badge/redirect/circleci/BbJs9oTbCH7LLiezNiXJW9/D3eKhPg3Et8a8GG6FsKHdm/tree/circleci-project-setup)
+![example workflow](https://github.com/mxli417/graphpak/actions/workflows/python-package.yaml/badge.svg?branch=master)
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 # graphpak - building knowledge graphs (quick and dirty)
 
 This package aims to evolve into a handy tool for building knowledge graph - like
